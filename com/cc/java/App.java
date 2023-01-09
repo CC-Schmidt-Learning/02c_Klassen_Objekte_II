@@ -1,12 +1,10 @@
 package com.cc.java;
 
-import com.cc.Bewerbung;
-
 public class App {
     
     public static void main(String[] args) {
     
-        Bewerbung bewerbung = new Bewerbung("White","Grizabella","Buxtehudestr.", 29, 11407, "Leipzig");
+        Bewerbung bewerbung = new Bewerbung( " ","White","Grizabella","Buxtehudestr.", 29, 11407, "Leipzig");
         output(bewerbung.getStringAttributes("#lastName"));
         output(bewerbung.getStringAttributes("#firstName"));
         output(bewerbung.getStringAttributes("#streetName"));
@@ -18,7 +16,8 @@ public class App {
     
         output("------------------------");
 
-        Bewerbung bewerbung1 = new Bewerbung("Grey", "Alonzo", "Klabauterst.", 35, 14299, "Leipzig");
+        Bewerbung bewerbung1 = new Bewerbung("ItCrowd", "Grey", "Alonzo", "Klabauterst.", 35, 14299, "Leipzig");
+        output(bewerbung1.getStringAttributes("#firmName"));
         output(bewerbung1.getStringAttributes("#lastName"));
         output(bewerbung1.getStringAttributes("#firstName"));
         output(bewerbung1.getStringAttributes("#streetName"));
