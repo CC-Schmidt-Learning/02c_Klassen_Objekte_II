@@ -1,23 +1,30 @@
 package com.cc.java;
 
+import com.cc.Bewerbung;
+
 public class App {
     
     public static void main(String[] args) {
     
-        Bewerbung bewerbung = new Bewerbung("White","Grizabella","Buxtehudestr.", 29, 01407,"Leipzig");
-        output(bewerbung.getStringAttributes("#name"));
-        output(bewerbung.getStringAttributes("#color"));
-        output(bewerbung.getAge());
-        output(bewerbung.getAge());
-        output(bewerbung.getAge());
+        Bewerbung bewerbung = new Bewerbung("White","Grizabella","Buxtehudestr.", 29, 11407, "Leipzig");
+        output(bewerbung.getStringAttributes("#lastName"));
+        output(bewerbung.getStringAttributes("#firstName"));
+        output(bewerbung.getStringAttributes("#streetName"));
+        System.out.println(bewerbung.getHouseNr());
+        System.out.println(bewerbung.getZip());
+        output(bewerbung.getStringAttributes("#city"));
+      
+       
     
         output("------------------------");
 
-        Cat cat1 = new Cat("Alonzo", "grey", 35, false);
-        output(cat1.getStringAttributes("#name"));
-        output(cat1.getStringAttributes("#color"));
-        output(cat1.getAge());
-
+        Bewerbung bewerbung1 = new Bewerbung("Grey", "Alonzo", "Klabauterst.", 35, 14299, "Leipzig");
+        output(bewerbung1.getStringAttributes("#lastName"));
+        output(bewerbung1.getStringAttributes("#firstName"));
+        output(bewerbung1.getStringAttributes("#streetName"));
+        System.out.println(bewerbung1.getHouseNr());
+        System.out.println(bewerbung1.getZip());
+        output(bewerbung1.getStringAttributes("#city"));
     }
 
     // Methode wird aus der KLASSE aufgerufen, daher static

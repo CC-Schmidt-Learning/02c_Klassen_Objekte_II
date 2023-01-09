@@ -16,4 +16,40 @@ public class Bewerbung {
         this.zip = zip;
         this.city = city;
     }
+
+
+    public int getHouseNr() {
+        return houseNr;
+    }
+
+
+    public void setHouseNr(int houseNr) {
+        this.houseNr = houseNr;
+    }
+
+
+    public int getZip() {
+        return zip;
+    }
+
+
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
+
+
+    public String getStringAttributes(String flag) {
+        switch (flag) {
+            case "#lastName":
+                return lastName;
+            case "#firstName":
+                return firstName;
+            case "#streetName":
+                return streetName;
+            case "#city":
+                return city;
+            default:
+                return "#!ERROR";
+        }
+    }
 }
