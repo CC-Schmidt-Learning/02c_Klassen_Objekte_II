@@ -4,12 +4,12 @@ public class App {
     
     public static void main(String[] args) {
     
-        Cat cat = new Cat("Grizabella","white",29,true);
-        output(cat.getStringAttributes("#name"));
-        output(cat.getStringAttributes("#color"));
-        output(cat.getAge());
-        output(cat.getAge());
-        output(cat.getAge());
+        Bewerbung bewerbung = new Bewerbung("White","Grizabella","Buxtehudestr.", 29, 01407,"Leipzig");
+        output(bewerbung.getStringAttributes("#name"));
+        output(bewerbung.getStringAttributes("#color"));
+        output(bewerbung.getAge());
+        output(bewerbung.getAge());
+        output(bewerbung.getAge());
     
         output("------------------------");
 
